@@ -1,0 +1,56 @@
+
+
+#container{
+  display: flex;
+  /* una caja a la par de la otra*/
+   flex-direction: row; 
+   /* en columnas*/
+   /* flex-direction: column;  */
+   /* cambiar en un orden diferente */
+   /* flex-direction: row-reverse; */
+     /* Evita que se salga de la caja el exceso de elementos y los coloca abajo */
+   flex-wrap:wrap; 
+
+   flex-flow:row wrap; /* se ahorra la  flex-wrap:wrap;  flex-direction: row*/
+
+   justify-content: center; /* ajustar el contenedor*/
+}
+
+.caja{
+    width: 30%;
+    height: 80px;
+    border: 2px solid lightblue;
+    margin: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 25px;
+    font-style: bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.roja{
+    flex-grow: 1;
+    background-color: rgb(240, 14, 14);
+    align-items: center; /* para ordenar objetos*/
+    flex-basis: 20%; /*a partir de cuanto empieza a creser*/
+    position: 1;
+}
+
+.azul{
+    flex-grow: 5;
+    background-color: rgb(39, 16, 245); 
+    position:2;
+}
+
+.verde{
+    flex-grow: 8;
+    background-color: rgb(18, 226, 35);
+    
+}
+.naranja{
+    flex-grow: 10;
+    background-color: rgb(248, 118, 32);
+   
+}
